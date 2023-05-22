@@ -66,6 +66,7 @@ class _MainMenuState extends State<MainMenu> {
 
   @override
   Widget build(BuildContext context) {
+    TextTheme _textTheme = Theme.of(context).textTheme;
     return Scaffold(
       appBar: AppBar(title: const Text('Quiz App'), actions: [
         Switch(value: _themeManager.themeMode == ThemeMode.dark, onChanged: (newValue){
@@ -104,6 +105,7 @@ class _MainMenuState extends State<MainMenu> {
                 ),
               ),
             ),
+            Text('data', style: _textTheme.bodySmall)
             
           ],
         ),
