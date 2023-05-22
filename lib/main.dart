@@ -46,7 +46,7 @@ class _MyAppState extends State<MyApp> {
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: _themeManager.themeMode,
-      home: const MainMenu()
+      home: MainMenu()
     );
   }
 }
@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
 
 
 class MainMenu extends StatefulWidget {
-  const MainMenu({Key? key}) : super(key: key);
+  MainMenu({Key? key}) : super(key: key);
 
   @override
   _MainMenuState createState() => _MainMenuState();
