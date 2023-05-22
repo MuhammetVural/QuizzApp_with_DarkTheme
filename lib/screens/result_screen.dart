@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
+import '../main.dart';
 import '../ui/shared/color.dart';
 import 'main_menu.dart';
 
@@ -60,7 +61,7 @@ class _ResultScreenState extends State<ResultScreen> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const MainMenu(),
+                    builder: (context) => MainMenu(),
                   ));
             },
             child: const Text(
