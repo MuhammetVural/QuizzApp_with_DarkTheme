@@ -1,16 +1,16 @@
 
 // import 'package:flutter/material.dart';
+// import 'package:provider/provider.dart';
 // import 'package:quizz_app_with_dark_theme/screens/quizz_screen.dart';
 // import 'package:quizz_app_with_dark_theme/theme/theme_manager.dart';
 
 
 // class MainMenu extends StatefulWidget {
-//   const MainMenu({Key? key}) : super(key: key);
+//   MainMenu({Key? key}) : super(key: key);
 
 //   @override
 //   _MainMenuState createState() => _MainMenuState();
 // }
-//   ThemeManager _themeManager = ThemeManager();
 
 // class _MainMenuState extends State<MainMenu> {
 
@@ -18,6 +18,7 @@
 
 //   @override
 //   Widget build(BuildContext context) {
+//     ThemeManager _themeManager = Provider.of<ThemeManager>(context);
 //     return Scaffold(
 //       appBar: AppBar(title: Text('Quiz App'), actions: [
 //         Switch(value: _themeManager.themeMode != ThemeMode.dark, onChanged: (newValue){
