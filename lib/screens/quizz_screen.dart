@@ -28,7 +28,7 @@ class _QuizzScreenState extends State<QuizzScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.pripmaryColor,
+      
       body: Padding(
           padding: const EdgeInsets.all(18.0),
           child: PageView.builder(
@@ -55,13 +55,13 @@ class _QuizzScreenState extends State<QuizzScreen> {
                       "Question ${index + 1}/10",
                       textAlign: TextAlign.start,
                       style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 28.0,
+                        
+                        fontSize: 22.0,
                       ),
                     ),
                   ),
                   const Divider(
-                    color: Colors.white,
+                    
                   ),
                   const SizedBox(
                     height: 10.0,
@@ -72,8 +72,8 @@ class _QuizzScreenState extends State<QuizzScreen> {
                     child: Text(
                       "${questions[index].question}",
                       style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 22.0,
+                        
+                        fontSize: 16.0,
                       ),
                     ),
                   ),
@@ -119,7 +119,7 @@ class _QuizzScreenState extends State<QuizzScreen> {
                   const SizedBox(
                     height: 40.0,
                   ),
-                  RawMaterialButton(
+                  ElevatedButton(
                     onPressed: () {
                       if (_controller!.page?.toInt() == questions.length - 1) {
                         Navigator.push(
@@ -136,10 +136,7 @@ class _QuizzScreenState extends State<QuizzScreen> {
                         });
                       }
                     },
-                    shape: const StadiumBorder(),
-                    fillColor: Colors.blue,
-                    padding: const EdgeInsets.all(18.0),
-                    elevation: 0.0,
+                    
                     child: Text(
                       btnText,
                       style: const TextStyle(color: Colors.white),
