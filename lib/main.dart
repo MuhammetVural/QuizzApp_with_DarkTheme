@@ -105,7 +105,7 @@ class _MainMenuState extends State<MainMenu> {
                 ),
               ),
             ),
-            Text('data', style: _textTheme.bodySmall)
+            
             
           ],
         ),

@@ -29,5 +29,14 @@ ThemeData lightTheme = ThemeData(
   
 );
 ThemeData darkTheme = ThemeData(
-  brightness: Brightness.dark
+  brightness: Brightness.dark,
+  elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ButtonStyle(
+      padding: MaterialStateProperty.all(const EdgeInsets.symmetric(horizontal: 60,),),
+      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10)
+      )),
+      backgroundColor: MaterialStateProperty.all(Colors.blueGrey)
+    )
+  )
 );

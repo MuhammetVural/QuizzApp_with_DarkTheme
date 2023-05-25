@@ -29,7 +29,7 @@ class _ResultScreenState extends State<ResultScreen> {
               "Congratulations",
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.white,
+                
                 fontSize: 25.0,
                 fontWeight: FontWeight.bold,
               ),
@@ -40,7 +40,7 @@ class _ResultScreenState extends State<ResultScreen> {
           ),
           const Text(
             "You Score is",
-            style: TextStyle(color: Colors.white, fontSize: 18.0),
+            style: TextStyle( fontSize: 18.0),
           ),
           const SizedBox(
             height: 20.0,
