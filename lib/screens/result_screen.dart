@@ -18,7 +18,7 @@ class _ResultScreenState extends State<ResultScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.pripmaryColor,
+      
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -30,7 +30,7 @@ class _ResultScreenState extends State<ResultScreen> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 40.0,
+                fontSize: 25.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -40,7 +40,7 @@ class _ResultScreenState extends State<ResultScreen> {
           ),
           const Text(
             "You Score is",
-            style: TextStyle(color: Colors.white, fontSize: 34.0),
+            style: TextStyle(color: Colors.white, fontSize: 18.0),
           ),
           const SizedBox(
             height: 20.0,
@@ -49,7 +49,7 @@ class _ResultScreenState extends State<ResultScreen> {
             "${widget.score}",
             style: const TextStyle(
               color: Colors.orange,
-              fontSize: 85.0,
+              fontSize: 60.0,
               fontWeight: FontWeight.bold,
             ),
           ),
