@@ -3,7 +3,7 @@ import '../model/question_model.dart';
 
 List<QuestionModel> questions = [
   QuestionModel(
-    "How Many Whiskers does the average cat have on each side of its face ?",
+    "",
     {
       "1": false,
       "3": false,
